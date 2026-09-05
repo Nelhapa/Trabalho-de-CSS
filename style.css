@@ -134,3 +134,92 @@ button{
 button:hover{
     background: #e69500;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Rodapé {
+    height: 30px;
+    background-color: #ff5a1f;
+}
+
+.footer {
+    padding: 40px 60px;
+}
+
+.footer-colunas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.colunas h3 {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.colunas ul {
+    list-style: none;
+}
+
+.colunas ul li {
+    margin-bottom: 10px;
+}
+
+.colunas ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 13px;
+}
+
+.colunas ul li a:hover {
+    color: #ff5a1f;
+}
+
+.pagamento-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.pagamento-icons img {
+    height: 25px;
+}
+
+.icones-socias {
+    display: flex;
+    gap: 10px;
+}
+
+.icones-socias img {
+    width: 20px;
+    height: 20px;
+}
+
+.icones-entrar{
+    display: flex;
+    gap: 10px;
+}
+
+.icones-entrar img{
+    width: 20px;
+    height: 20px;
+}
+
+.imagem_QR{
+    display: flex;
+    gap: 10px;
+}
+
+.imagem_QR img{
+    width: 42px;
+    height: 42px;
+}
+
