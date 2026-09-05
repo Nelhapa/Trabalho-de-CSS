@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+}
+
+#catalogo{
+    background: #ffa500;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+}
+
+#catalogo h1{
+    color: white;
+    font-size: 28px;
+}
+
+#itens{
+    background: #ffbc2f;
+    padding: 14px 0;
+}
+
+#itens ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#itens a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#itens a:hover{
+    text-decoration: underline;
+}
+
+#gerais{
+    max-width: 1100px;
+    margin: 40px auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+#produtos-miniatura{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.produto-thumb{
+    width: 70px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.produto-thumb:hover{
+    border-color: black;
+}
+
+#produto-principal img{
+    width: 320px;
+    height: auto;
+}
+
+#informacoes{
+    max-width: 360px;
+}
+
+#informacoes h2{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.preco{
+    color: #ff8c00;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.opcoes{
+    margin-top: 20px;
+}
+
+.opcoes h3{
+    margin: 14px 0 8px;
+    font-size: 16px;
+}
+
+.opcoes ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.opcoes li{
+    border: 1px solid #bcbcbc;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.opcoes li:hover{
+    border-color: #ffa500;
+    color: #ffa500;
+}
+
+button{
+    margin-top: 18px;
+    width: 120px;
+    height: 42px;
+    border: none;
+    border-radius: 8px;
+    background: #ffa500;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #e69500;
+}
