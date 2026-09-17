@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e0e0e0;
+}
+
+.header-container {
+    margin: 10px 10px 0 10px;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+}
+
+#catalogo {
+    background-color: #ff9900;
+    padding: 15px 20px;
+}
+
+#catalogo h1 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#itens {
+    background-color: #ffab24;
+    padding: 12px 0;
+}
+
+#itens ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#itens ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#itens ul li a:hover {
+    text-decoration: underline;
+}
+
+.pagina {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.formulario {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.formulario h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff9900;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #f5f5f5;
+    padding: 40px 50px 20px 50px;
+    margin-top: 40px;
+}
+
+.footer-colunas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.coluna {
+    flex: 1;
+    min-width: 160px;
+}
+
+.coluna h3 {
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.coluna ul {
+    list-style: none;
+}
+
+.coluna ul li {
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.coluna ul li a {
+    text-decoration: none;
+    color: #666;
+}
+
+.pagamento-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.pagamento-icons img {
+    width: 45px;
+}
+
+.icones-sociais li img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.app-download {
+    display: flex;
+    gap: 10px;
+}
+
+.qrcode {
+    width: 70px;
+    height: 70px;
+}
+
+.lojas-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.lojas-icons a {
+    text-decoration: none;
+    font-size: 11px;
+    color: #666;
+}
+
+.linha-divisoria {
+    border: 0;
+    border-top: 1px solid #e0e0e0;
+    margin: 30px 0 15px 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Rodapé {
+    height: 30px;
+    background-color: #ff5a1f;
+}
+
+.footer {
+    background: white;
+    padding: 40px 60px;
+}
+
+.footer-colunas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.colunas h3 {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.colunas ul {
+    list-style: none;
+}
+
+.colunas ul li {
+    margin-bottom: 10px;
+}
+
+.colunas ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 13px;
+}
+
+.colunas ul li a:hover {
+    color: #ff5a1f;
+}
+
+.pagamento-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.pagamento-icons img {
+    height: 25px;
+}
+
+.icones-socias {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.icones-socias img {
+    width: 20px;
+    height: 20px;
+}
+
+.icones-entrar{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.icones-entrar img{
+    width: 20px;
+    height: 20px;
+}
+
+.imagem_QR{
+    display: flex;
+    gap: 10px;
+}
+
+.qrcode{
+    width: 100px;
+    height: 100px;
+}
