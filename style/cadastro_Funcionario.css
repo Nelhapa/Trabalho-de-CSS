@@ -9,8 +9,6 @@ body {
     background-color: #e0e0e0;
 }
 
-/* --- ESTILO DO TOPO (HEADER E NAV) --- */
-
 .header-container {
     margin: 10px 10px 0 10px;
     border-radius: 12px 12px 0 0;
@@ -18,7 +16,7 @@ body {
 }
 
 #catalogo {
-    background-color: #ff9900; /* Amarelo/Laranja vibrante */
+    background-color: #ff9900;
     padding: 15px 20px;
 }
 
@@ -29,14 +27,13 @@ body {
 }
 
 #itens {
-    background-color: #ffab24; /* Tom levemente mais claro para a barra do menu */
+    background-color: #ffab24;
     padding: 12px 0;
 }
 
 #itens ul {
     display: flex;
-    justify-content: space-around; /* Distribui os itens igualmente ao longo do menu */
-    align-items: center;
+    justify-content: space-around;
     list-style: none;
 }
 
@@ -50,8 +47,6 @@ body {
 #itens ul li a:hover {
     text-decoration: underline;
 }
-
-/* --- ESTILO DO FORMULÁRIO --- */
 
 .pagina {
     display: flex;
@@ -91,8 +86,6 @@ body {
     border-radius: 4px;
     cursor: pointer;
 }
-
-/* --- ESTILO DO RODAPÉ (FOOTER) --- */
 
 .footer {
     background-color: #f5f5f5;
@@ -240,7 +233,8 @@ body {
 
 .icones-socias {
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .icones-socias img {
@@ -250,7 +244,8 @@ body {
 
 .icones-entrar{
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .icones-entrar img{
@@ -263,7 +258,7 @@ body {
     gap: 10px;
 }
 
-.imagem_QR img{
-    width: 42px;
-    height: 42px;
+.qrcode{
+    width: 100px;
+    height: 100px;
 }
