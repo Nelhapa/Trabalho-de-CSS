@@ -16,49 +16,48 @@
     <nav id="itens">
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="cadastrocliente.html">Cadastro Cliente</a></li>
-            <li><a href="cadastro_Funcionario.html">Cadastro Funcionário</a></li>
-            <li><a href="cadastrar_produto.html">Cadastro Produto</a></li>
+            <li><a href="#">Cadastro Cliente</a></li>
+            <li><a href="#">Cadastro Funcionário</a></li>
+            <li><a href="#">Cadastro Produto</a></li>
             <li><a href="#">Ver Clientes</a></li>
             <li><a href="#">Ver Funcionários</a></li>
-            <li><a href="visualizarproduto.html">Ver Produtos</a></li>
+            <li><a href="#">Ver Produtos</a></li>
         </ul>
     </nav>
 
-    <div class="pagina">
+    <main class="pagina">
         <div class="formulario">
             <h2>Cadastrar Cliente</h2>
             <form>
-                <input type="text" placeholder="Nome">
-                <input type="text" placeholder="Sobrenome">
-                <input type="text" placeholder="CPF">
-                <input type="date" placeholder="dd/mm/aaaa">
-                <input type="tel" placeholder="Telefone">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Senha">
+                <input type="text" placeholder="Nome" required>
+                <input type="text" placeholder="Sobrenome" required>
+                <input type="text" placeholder="CPF" required>
+                <input type="date" required>
+                <input type="tel" placeholder="Telefone" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Senha" required>
 
                 <p class="label-foto">Selecionar foto de perfil:</p>
-                <input type="file">
+                <input type="file" class="input-file">
 
                 <button type="submit">CADASTRAR</button>
             </form>
         </div>
-    </div>
+    </main>
 
-    <div class="footer">
+    <footer class="footer">
         <div class="footer-colunas">
 
             <div class="colunas">
                 <h3>Atendimento ao cliente</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="cadastrocliente.html">Cadastro Cliente</a></li>
-                    <li><a href="cadastro_Funcionario.html">Cadastro Funcionário</a></li>
-                    <li><a href="cadastrar_produto.html">Cadastro Produto</a></li>
-                    <li><a href="#">Ver Clientes</a></li>
-                    <li><a href="#">Ver Funcionários</a></li>
-                    <li><a href="visualizarproduto.html">Ver Produtos</a></li>
-                    <li><a href="visualizarcupom.html">Ver Cupom</a></li>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">Como Comprar</a></li>
+                    <li><a href="#">Métodos de Pagamento</a></li>
+                    <li><a href="#">Garantia</a></li>
+                    <li><a href="#">Devolução e Reembolso</a></li>
+                    <li><a href="#">Fale com a gente</a></li>
+                    <li><a href="#">Ouvidoria</a></li>
                 </ul>
             </div>
 
@@ -79,27 +78,29 @@
             <div class="colunas">
                 <h3>Pagamento</h3>
                 <div class="pagamento-icons">
-                    <img src="img/visa.png" alt="visa">
-                    <img src="img/cartao.png" alt="Mastercard">
-                    <img src="img/" alt="Amex">
-                    <img src="img/" alt="Elo">
+                    <img src="img/visa.jfif" alt="visa">
+                    <img src="img/pix.png" alt="Mastercard">
+                    <img src="img/hipercard.png" alt="Amex">
+                    <img src="img/cartao.png" alt="Elo">
                 </div>
             </div>
 
             <div class="colunas">
                 <h3>Siga-nos</h3>
                 <ul class="icones-socias">
-                    <li><img src="img/instagram.png" alt="Instagram"> Instagram </li>
-                    <li><img src="img/twitter.png" alt="Twitter"> Twitter </li>
-                    <li><img src="img/facebook.png" alt="Facebook"> Facebook </li>
-                    <li><img src="img/youtube.png" alt="Youtube"> Youtube </li>
-                    <li><img src="img/linkedin.png" alt="Linkedin"> Linkedin </li>
+                    <li><a href="#"><img src="img/instagram.png" alt="Instagram"> Instagram</a></li>
+                    <li><a href="#"><img src="img/twitter.png" alt="Twitter"> Twitter</a></li>
+                    <li><a href="#"><img src="img/facebook.png" alt="Facebook"> Facebook</a></li>
+                    <li><a href="#"><img src="img/youtube.png" alt="Youtube"> Youtube</a></li>
+                    <li><a href="#"><img src="img/linkedin.png" alt="Linkedin"> Linkedin</a></li>
                 </ul>
             </div>
 
             <div class="colunas">
-                <h3>Atendimento ao cliente</h3>
-                <img src="img/QR_Code.png" alt="QR code" class="qrcode">
+                <h3>Baixe o App</h3>
+                <div class="imagem_QR">
+                    <img src="img/QR_Code.png" alt="QR Code" class="qrcode">
+                </div>
                 <ul class="icones-entrar">
                     <li><img src="img/google-play.png" alt="Google Play"> Google Play</li>
                     <li><img src="img/apple-big-logo.png" alt="App Store"> App Store</li>
@@ -108,8 +109,8 @@
 
         </div>
 
-        <p class="copyright">© 2023 Xhopii. Todos os direitos acadêmicos reservados</p>
-    </div>
+        <p class="copyright">© 2023 Xhopii. Todos os direitos reservados.</p>
+    </footer>
 
 </body>
 </html>

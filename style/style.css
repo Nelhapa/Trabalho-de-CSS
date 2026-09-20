@@ -1,15 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background: white;
+body {
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-#catalogo{
+#catalogo {
     background: #ffa500;
     height: 64px;
     display: flex;
@@ -17,33 +19,33 @@ body{
     padding: 0 24px;
 }
 
-#catalogo h1{
+#catalogo h1 {
     color: white;
     font-size: 28px;
 }
 
-#itens{
+#itens {
     background: #ffbc2f;
     padding: 14px 0;
 }
 
-#itens ul{
+#itens ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
 }
 
-#itens a{
+#itens a {
     color: white;
     text-decoration: none;
     font-size: 15px;
 }
 
-#itens a:hover{
+#itens a:hover {
     text-decoration: underline;
 }
 
-#gerais{
+#gerais {
     max-width: 1100px;
     margin: 40px auto;
     display: flex;
@@ -51,54 +53,54 @@ body{
     gap: 40px;
 }
 
-#produtos-miniatura{
+#produtos-miniatura {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.produto-thumb{
+.produto-thumb {
     width: 70px;
     border: 2px solid transparent;
     cursor: pointer;
     transition: 0.3s;
 }
 
-.produto-thumb:hover{
+.produto-thumb:hover {
     border-color: black;
 }
 
-#produto-principal img{
+#produto-principal img {
     width: 320px;
     height: auto;
 }
 
-#informacoes{
+#informacoes {
     max-width: 360px;
 }
 
-#informacoes h2{
+#informacoes h2 {
     font-size: 26px;
     margin-bottom: 10px;
 }
 
-.preco{
+.preco {
     color: #ff8c00;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 8px;
 }
 
-.opcoes{
+.opcoes {
     margin-top: 20px;
 }
 
-.opcoes h3{
+.opcoes h3 {
     margin: 14px 0 8px;
     font-size: 16px;
 }
 
-.opcoes ul{
+.opcoes ul {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
@@ -106,19 +108,19 @@ body{
     margin-bottom: 10px;
 }
 
-.opcoes li{
+.opcoes li {
     border: 1px solid #bcbcbc;
     padding: 6px 12px;
     border-radius: 4px;
     cursor: pointer;
 }
 
-.opcoes li:hover{
+.opcoes li:hover {
     border-color: #ffa500;
     color: #ffa500;
 }
 
-button{
+button {
     margin-top: 18px;
     width: 120px;
     height: 42px;
@@ -130,18 +132,8 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     background: #e69500;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .Rodapé {
@@ -193,35 +185,54 @@ body {
     height: 25px;
 }
 
-.icones-socias {
+.icones-socias,
+.icones-sociais {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.icones-socias img {
+.icones-socias a,
+.icones-sociais a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #555;
+    font-size: 13px;
+}
+
+.icones-socias a:hover,
+.icones-sociais a:hover {
+    color: #ff5a1f;
+}
+
+.icones-socias img,
+.icones-sociais img {
     width: 20px;
     height: 20px;
 }
 
-.icones-entrar{
+.icones-entrar {
     display: flex;
+    gap: 1px;
     flex-direction: column;
-    gap: 10px;
 }
 
-.icones-entrar img{
+.icones-entrar img {
     width: 20px;
     height: 20px;
 }
 
-.imagem_QR{
+.imagem_QR,
+.imagem-qr {
     display: flex;
-    flex-direction: column;
     gap: 10px;
 }
 
-.qrcode{
-    width: 100px;
-    height: 100px;
+.imagem_QR img,
+.imagem-qr img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
 }

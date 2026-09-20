@@ -1,157 +1,133 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
-
-body{
-    background:#e0e0e0;
-}
-
-#catalogo{
-    background:#ff9900;
-    padding:15px 20px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-#catalogo h1{
-    color:#fff;
-    font-size:24px;
-}
-
-.sair{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-#itens{
-    background:#ffab24;
-    padding:12px 0;
-}
-
-#itens ul{
-    display:flex;
-    justify-content:space-around;
-    list-style:none;
-}
-
-#itens ul li a{
-    color:white;
-    text-decoration:none;
-    font-size:13px;
-    font-weight:600;
-}
-
-#itens ul li a:hover{
-    text-decoration:underline;
-}
-.footer {
-    background-color: #f5f5f5;
-    padding: 40px 50px 20px 50px;
-    margin-top: 40px;
-}
-
-.footer-colunas {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.coluna {
-    flex: 1;
-    min-width: 160px;
-}
-
-.coluna h3 {
-    font-size: 12px;
-    color: #333;
-    margin-bottom: 15px;
-    font-weight: bold;
-}
-
-.coluna ul {
-    list-style: none;
-}
-
-.coluna ul li {
-    margin-bottom: 8px;
-    font-size: 12px;
-}
-
-.coluna ul li a {
-    text-decoration: none;
-    color: #666;
-}
-
-.pagamento-icons {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-}
-
-.pagamento-icons img {
-    width: 45px;
-}
-
-.icones-sociais li img {
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
-    margin-right: 6px;
-}
-
-.app-download {
-    display: flex;
-    gap: 10px;
-}
-
-.qrcode {
-    width: 70px;
-    height: 70px;
-}
-
-.lojas-icons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 8px;
-}
-
-.lojas-icons a {
-    text-decoration: none;
-    font-size: 11px;
-    color: #666;
-}
-
-.linha-divisoria {
-    border: 0;
-    border-top: 1px solid #e0e0e0;
-    margin: 30px 0 15px 0;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.Rodapé {
-    height: 30px;
-    background-color: #ff5a1f;
+body {
+    background: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o corpo ocupa toda a altura da janela */
 }
 
+/* --- HEADER E NAVEGAÇÃO --- */
+#catalogo {
+    background: #ff9900;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#catalogo h1 {
+    color: #fff;
+    font-size: 24px;
+}
+
+.sair {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#itens {
+    background: #ffab24;
+    padding: 12px 0;
+}
+
+#itens ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#itens ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#itens ul li a:hover {
+    text-decoration: underline;
+}
+
+/* --- GRID DE CUPÕES --- */
+#cupom-grid {
+    width: 1200px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    flex: 1; /* Empurra o rodapé para o fundo quando há pouco conteúdo */
+}
+
+.cupom {
+    width: 260px;
+    height: 150px;
+    background: linear-gradient(135deg, #ff2b2b, #d60000);
+    border-radius: 22px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 28px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,.25);
+    overflow: hidden;
+    transition: .25s ease;
+}
+
+.cupom:hover {
+    transform: scale(1.03);
+}
+
+.cupom::before,
+.cupom::after {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background: #e0e0e0;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cupom::before {
+    left: -14px;
+}
+
+.cupom::after {
+    right: -14px;
+}
+
+.cupom::selection {
+    display: none;
+}
+
+.cupom p {
+    margin: 0;
+    color: rgba(255,255,255,.9);
+    font: 900 18px Impact, sans-serif;
+    letter-spacing: 1px;
+}
+
+.cupom h2 {
+    margin: 6px 0 0;
+    color: #fff;
+    font: 900 42px Impact, sans-serif;
+    letter-spacing: 2px;
+}
+
+/* --- RODAPÉ PRINCIPAL --- */
 .footer {
     background: white;
-    padding: 40px 60px;
+    padding: 40px 60px 30px 60px;
+    margin-top: 40px;
+    width: 100%;
 }
 
 .footer-colunas {
@@ -161,9 +137,17 @@ body {
     gap: 20px;
 }
 
+.colunas {
+    flex: 1;
+    min-width: 160px;
+}
+
 .colunas h3 {
     font-size: 14px;
+    color: #333;
     margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .colunas ul {
@@ -172,6 +156,10 @@ body {
 
 .colunas ul li {
     margin-bottom: 10px;
+    font-size: 13px;
+    color: #555;
+    display: flex;
+    align-items: center;
 }
 
 .colunas ul li a {
@@ -184,112 +172,74 @@ body {
     color: #ff5a1f;
 }
 
+/* Ícones de Pagamento */
 .pagamento-icons {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
 .pagamento-icons img {
     height: 25px;
+    object-fit: contain;
 }
 
+/* Ícones Sociais */
 .icones-socias {
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
 }
 
 .icones-socias img {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
 }
 
-.icones-entrar{
+/* Área de Download do App */
+.app-download {
     display: flex;
-    gap: 10px;
+    gap: 12px;
+    align-items: center;
 }
 
-.icones-entrar img{
-    width: 20px;
-    height: 20px;
+.imagem_QR img, .qrcode {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
-.imagem_QR{
-    display: flex;
-    gap: 10px;
-}
-
-.imagem_QR img{
-    width: 42px;
-    height: 42px;
-}
-#cupom-grid{
-    width:1200px;
-    margin:20px auto;
-    display:grid;
-    grid-template-columns:repeat(4, 1fr);
-    gap:20px;
-}
-
-.cupom {
-    width: 260px;
-    height: 150px;
-    background: linear-gradient(135deg, #ff2b2b, #d60000);
-    border-radius: 22px;
-    position: relative;
-
+.icones-entrar {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 8px;
+    list-style: none;
+}
 
-    padding-left: 28px;
+.icones-entrar li {
+    font-size: 12px;
+    color: #555;
     cursor: pointer;
-
-    box-shadow: 0 10px 25px rgba(0,0,0,.25);
-    overflow: hidden;
-    transition: .25s ease;
 }
 
-/* efeito ao passar o mouse */
-.cupom:hover{
-    transform: scale(1.03);
+.icones-entrar img {
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
 }
 
-/* recortes laterais do cupom */
-.cupom::before,
-.cupom::after{
-    content: "";
-    position: absolute;
-    width: 28px;
-    height: 28px;
-    background: white;      /* mesma cor do fundo da página */
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
+/* Linha Divisória e Copyright */
+.linha-divisoria {
+    border: 0;
+    border-top: 1px solid #e0e0e0;
+    margin: 30px 0 20px 0;
 }
 
-.cupom::before{
-    left: -14px;
-}
-
-.cupom::after{
-    right: -14px;
-}
-
-/* linha pontilhada */
-.cupom::selection{
-    display: none;
-}
-
-.cupom p{
-    margin: 0;
-    color: rgba(255,255,255,.9);
-    font: 900 18px Impact, sans-serif;
-    letter-spacing: 1px;
-}
-
-.cupom h2{
-    margin: 6px 0 0;
-    color: #fff;
-    font: 900 42px Impact, sans-serif;
-    letter-spacing: 2px;
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    color: #888;
 }

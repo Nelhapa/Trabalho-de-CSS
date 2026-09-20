@@ -2,45 +2,57 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     background-color: #e0e0e0;
-}
-
-.header-container {
-    margin: 10px 10px 0 10px;
-    border-radius: 12px 12px 0 0;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 #catalogo {
     background-color: #ff9900;
-    padding: 15px 20px;
+    padding: 15px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #catalogo h1 {
     color: #ffffff;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
+}
+
+#catalogo .sair {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#catalogo .sair:hover {
+    text-decoration: underline;
 }
 
 #itens {
     background-color: #ffab24;
-    padding: 12px 0;
+    padding: 14px 0;
 }
 
 #itens ul {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     list-style: none;
 }
 
 #itens ul li a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -49,8 +61,10 @@ body {
 }
 
 .pagina {
+    flex: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 40px 20px;
 }
 
@@ -59,13 +73,15 @@ body {
     padding: 30px;
     border-radius: 8px;
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .formulario h2 {
     margin-bottom: 20px;
     font-size: 20px;
     color: #333;
+    text-align: center;
 }
 
 .formulario input {
@@ -74,23 +90,42 @@ body {
     margin-bottom: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 14px;
+}
+
+.label-foto {
+    font-size: 13px;
+    color: #555;
+    margin-top: 4px;
+    margin-bottom: 6px;
+}
+
+.input-file {
+    padding: 6px !important;
 }
 
 .formulario button {
     width: 100%;
     padding: 12px;
+    margin-top: 8px;
     background-color: #ff9900;
     border: none;
     color: white;
     font-weight: bold;
+    font-size: 15px;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.formulario button:hover {
+    background-color: #e68a00;
 }
 
 .footer {
-    background-color: #f5f5f5;
-    padding: 40px 50px 20px 50px;
-    margin-top: 40px;
+    background-color: #ffffff;
+    padding: 40px 60px 20px 60px;
+    border-top: 1px solid #dcdcdc;
 }
 
 .footer-colunas {
@@ -100,108 +135,16 @@ body {
     gap: 20px;
 }
 
-.coluna {
+.colunas {
     flex: 1;
     min-width: 160px;
 }
 
-.coluna h3 {
-    font-size: 12px;
+.colunas h3 {
+    font-size: 14px;
     color: #333;
     margin-bottom: 15px;
     font-weight: bold;
-}
-
-.coluna ul {
-    list-style: none;
-}
-
-.coluna ul li {
-    margin-bottom: 8px;
-    font-size: 12px;
-}
-
-.coluna ul li a {
-    text-decoration: none;
-    color: #666;
-}
-
-.pagamento-icons {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-}
-
-.pagamento-icons img {
-    width: 45px;
-}
-
-.icones-sociais li img {
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
-    margin-right: 6px;
-}
-
-.app-download {
-    display: flex;
-    gap: 10px;
-}
-
-.qrcode {
-    width: 70px;
-    height: 70px;
-}
-
-.lojas-icons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 8px;
-}
-
-.lojas-icons a {
-    text-decoration: none;
-    font-size: 11px;
-    color: #666;
-}
-
-.linha-divisoria {
-    border: 0;
-    border-top: 1px solid #e0e0e0;
-    margin: 30px 0 15px 0;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.Rodapé {
-    height: 30px;
-    background-color: #ff5a1f;
-}
-
-.footer {
-    background: white;
-    padding: 40px 60px;
-}
-
-.footer-colunas {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.colunas h3 {
-    font-size: 14px;
-    margin-bottom: 15px;
 }
 
 .colunas ul {
@@ -209,7 +152,7 @@ body {
 }
 
 .colunas ul li {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .colunas ul li a {
@@ -224,41 +167,73 @@ body {
 
 .pagamento-icons {
     display: flex;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 180px;
 }
 
 .pagamento-icons img {
     height: 25px;
+    width: auto;
+    object-fit: contain;
 }
 
-.icones-socias {
+.icones-socias li {
+    margin-bottom: 8px;
+}
+
+.icones-socias a {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #555;
+    font-size: 13px;
+}
+
+.icones-socias a:hover {
+    color: #ff5a1f;
 }
 
 .icones-socias img {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
+    flex-direction: column;
 }
 
-.icones-entrar{
+.imagem_QR img,
+.qrcode {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.icones-entrar {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
+    flex-direction: column;
 }
 
-.icones-entrar img{
-    width: 20px;
-    height: 20px;
-}
-
-.imagem_QR{
+.icones-entrar li {
     display: flex;
-    gap: 10px;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #555;
 }
 
-.qrcode{
-    width: 100px;
-    height: 100px;
+.icones-entrar img {
+    width: 18px;
+    height: 18px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    font-size: 12px;
+    color: #888;
 }
