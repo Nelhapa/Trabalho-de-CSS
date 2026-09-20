@@ -195,6 +195,7 @@ body {
 
 .icones-socias {
     display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 
@@ -205,6 +206,7 @@ body {
 
 .icones-entrar{
     display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 
@@ -215,11 +217,11 @@ body {
 
 .imagem_QR{
     display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 
-.imagem_QR img{
-    width: 42px;
-    height: 42px;
+.qrcode{
+    width: 100px;
+    height: 100px;
 }
-
