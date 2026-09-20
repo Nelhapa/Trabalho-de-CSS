@@ -230,25 +230,66 @@ body {
     gap:20px;
 }
 
-.cupom{
-    background-color: rgb(249, 4, 4);
-    height: 400px;
+.cupom {
+    width: 260px;
     height: 150px;
-    border-radius: 30px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.cupom p{
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: linear-gradient(135deg, #ff2b2b, #d60000);
+    border-radius: 22px;
+    position: relative;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 28px;
+    cursor: pointer;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.25);
+    overflow: hidden;
+    transition: .25s ease;
 }
+
+/* efeito ao passar o mouse */
+.cupom:hover{
+    transform: scale(1.03);
+}
+
+/* recortes laterais do cupom */
+.cupom::before,
+.cupom::after{
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background: white;      /* mesma cor do fundo da página */
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cupom::before{
+    left: -14px;
+}
+
+.cupom::after{
+    right: -14px;
+}
+
+/* linha pontilhada */
+.cupom::selection{
+    display: none;
+}
+
+.cupom p{
+    margin: 0;
+    color: rgba(255,255,255,.9);
+    font: 900 18px Impact, sans-serif;
+    letter-spacing: 1px;
+}
+
 .cupom h2{
-    color: white;
-    margin-left: 50px;
-    font-size: 30px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 6px 0 0;
+    color: #fff;
+    font: 900 42px Impact, sans-serif;
+    letter-spacing: 2px;
 }
