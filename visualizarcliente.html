@@ -1,55 +1,87 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastrar Funcionário - Xhopii</title>
-    <link rel="stylesheet" href="style/cadastro_Funcionario.css">
+    <title>Xhopii - Visualizar Clientes</title>
+    <link rel="stylesheet" href="style/visualizarcliente.css">
 </head>
 <body>
 
-    <header id="catalogo">
-        <h1>Xhopii</h1>
-        <a href="#" class="sair">Sair</a>
-    </header>
+<header id="catalogo">
+    <h1>Xhopii</h1>
+    <a href="#" class="sair">Sair</a>
+</header>
 
-    <nav id="itens">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="cadastrocliente.html">Adicionar Cliente</a></li>
-            <li><a href="cadastro_Funcionario.html">Adicionar Funcionário</a></li>
-            <li><a href="cadastrar_produto.html">Adicionar Produto</a></li>
-            <li><a href="visualizarcliente.html">Visualizar Clientes</a></li>
-            <li><a href="#">Visualizar Funcionários</a></li>
-            <li><a href="visualizarproduto.html">Visualizar Produtos</a></li>
-            <li><a href="visualizarcupom.html">Visualizar Cupons</a></li>
-        </ul>
-    </nav>
+<nav id="itens">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="cadastrocliente.html">Adicionar Cliente</a></li>
+        <li><a href="cadastro_Funcionario.html">Adicionar Funcionário</a></li>
+        <li><a href="cadastrar_produto.html">Adicionar Produto</a></li>
+        <li><a href="visualizarcliente.html">Visualizar Clientes</a></li>
+        <li><a href="#">Visualizar Funcionários</a></li>
+        <li><a href="visualizarproduto.html">Visualizar Produtos</a></li>
+        <li><a href="visualizarcupom.html">Visualizar Cupons</a></li>
+    </ul>
+</nav>
 
-    <main class="pagina">
-        <div class="formulario">
-            <h2>Cadastrar Funcionário</h2>
-            <form>
-                <input type="text" placeholder="Nome" required>
-                <input type="text" placeholder="Sobrenome" required>
-                <input type="text" placeholder="CPF" required>
-                <input type="date" required>
-                <input type="tel" placeholder="Telefone" required>
-                <input type="text" placeholder="Cargo/Função" required>
-                <input type="text" placeholder="Salário" required>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Senha" required>
+<main class="container">
 
-                <p class="label-foto">Selecionar foto de perfil:</p>
-                <input type="file" class="input-file">
+    <div class="topo">
+        <h2>Clientes Cadastrados</h2>
+        <button>Novo Cliente</button>
+    </div>
 
-                <button type="submit">CADASTRAR</button>
-            </form>
-        </div>
-    </main>
+    <table>
+        <tr>
+            <th>Foto</th>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Ações</th>
+        </tr>
 
-    <footer class="footer">
-        <div class="footer-colunas">
+        <tr>
+            <td><img src="img/do-utilizador.png" class="foto"></td>
+            <td>1</td>
+            <td>Carlos Daniel</td>
+            <td>carlos@email.com</td>
+            <td>
+                <button class="editar">Editar</button>
+                <button class="apagar">Apagar</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td><img src="img/do-utilizador.png" class="foto"></td>
+            <td>2</td>
+            <td>Maria Silva</td>
+            <td>maria@email.com</td>
+            <td>
+                <button class="editar">Editar</button>
+                <button class="apagar">Apagar</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td><img src="img/do-utilizador.png" class="foto"></td>
+            <td>3</td>
+            <td>João Pedro</td>
+            <td>joao@email.com</td>
+            <td>
+                <button class="editar">Editar</button>
+                <button class="apagar">Apagar</button>
+            </td>
+        </tr>
+    </table>
+
+</main>
+
+<div class="Rodapé"></div>
+
+<footer class="footer">
+    <div class="footer-colunas">
 
             <div class="colunas">
                 <h3>Atendimento ao cliente</h3>
@@ -84,7 +116,7 @@
                     <img src="img/visa.jfif" alt="visa">
                     <img src="img/pix.png" alt="Mastercard">
                     <img src="img/hipercard.png" alt="Amex">
-                    <img src="img/cartao.png" alt="Elo">
+                    <img src="img/cartao.png" alt="Elo">>
                 </div>
             </div>
 
@@ -113,7 +145,7 @@
         </div>
 
         <p class="copyright">© 2023 Xhopii. Todos os direitos reservados.</p>
-    </footer>
+</footer>
 
 </body>
-</html> 
+</html>

@@ -1,0 +1,180 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#e0e0e0;
+}
+
+/* Header */
+
+#catalogo{
+    background:#ff9900;
+    padding:15px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+#catalogo h1{
+    color:#fff;
+}
+
+.sair{
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Menu */
+
+#itens{
+    background:#ffab24;
+    padding:12px 0;
+}
+
+#itens ul{
+    display:flex;
+    justify-content:space-around;
+    list-style:none;
+}
+
+#itens a{
+    color:#fff;
+    text-decoration:none;
+    font-size:13px;
+    font-weight:bold;
+}
+
+/* Conteúdo */
+
+.container{
+    width:1200px;
+    margin:30px auto;
+    background:#fff;
+    padding:20px;
+    border-radius:5px;
+}
+
+.topo{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.topo button{
+    background:#ff9900;
+    color:#fff;
+    border:none;
+    padding:8px 14px;
+    cursor:pointer;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:center;
+}
+
+th{
+    background:#f3f3f3;
+}
+
+.foto{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+}
+
+.editar{
+    background:#3498db;
+    color:#fff;
+    border:none;
+    padding:5px 10px;
+    cursor:pointer;
+}
+
+.apagar{
+    background:#e74c3c;
+    color:#fff;
+    border:none;
+    padding:5px 10px;
+    cursor:pointer;
+}
+
+/* Rodapé */
+
+.Rodapé{
+    height:12px;
+    background:#ff9900;
+    margin-top:40px;
+}
+
+.footer{
+    background:#fff;
+    padding:30px;
+}
+
+.footer-colunas{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.colunas{
+    width:180px;
+}
+
+.colunas h3{
+    color:#333;
+    margin-bottom:10px;
+    font-size:16px;
+}
+
+.colunas ul{
+    list-style:none;
+}
+
+.colunas li{
+    margin-bottom:8px;
+    font-size:13px;
+}
+
+.colunas a{
+    color:#666;
+    text-decoration:none;
+}
+
+.pagamento-icons img{
+    width:45px;
+    margin:4px;
+}
+
+.icones-socias img,
+.icones-entrar img{
+    width:18px;
+    margin-right:6px;
+    vertical-align:middle;
+}
+
+.qrcode{
+    width:90px;
+    margin-bottom:10px;
+}
+
+.copyright{
+    text-align:center;
+    color:#888;
+    font-size:12px;
+    margin-top:20px;
+}
